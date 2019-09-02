@@ -24,7 +24,7 @@ Botkit  | https://botkit.ai/  | MIT license
 
 As seções seguintes descrevem o que foi encontrado na exploração destas frameworks, apresentando como cada uma delas funciona.
 
-##Rasa
+## Rasa
 
 A framework Rasa ou Rasa Stack possui um conjunto de ferramentas de aprendizado de máquina para que desenvolvedores possam criar chatbots contextuais, diferente de daqueles baseados em regras pré-definidas. Essa framework é composta de dois módulos que são independentes e podem ser usados separadamente. O módulo principal (Rasa Core) e módulo de processamento de linguagem natural (chamado de Rasa natural language understanding ou Rasa NLU) são detalhados a seguir:
 
@@ -47,7 +47,7 @@ A integração com canais de comunicação nessa framework é possível de forma
 \item Conectores customizados
 \end{itemize}
 
-##Wit.ai
+## Wit.ai
 
 Wit.ai é uma plataforma que implementa uma API (do inglês application program interface) gratuita para instancias públicas e privadas sem limitações para requisições. Fornece reconhecimento de voz e texto por meio do apredizado de máquina. Além disso, possui elementos como a classificação de intenções e extração de entidades. Também disponibiliza entidades pré-definidas como temperaturas, números, email e outras entidades comumente utilizadas em chatbots.
 
@@ -55,7 +55,7 @@ Essa plataforma foi adquirida pelo facebook em 2015 e, portanto, pode ser integr
 
 A desvantagem do Wit.ai é o fato ser uma solução hospedada pelo facebook onde os recursos são centralizados e somente disponíveis via requisições http. Além do mais, só permite integração com o Facebook Messenger.
 
-##Botpres
+## Botpres
 Botpres é uma framework que possibilita a integração com as principais plataformas de mensagens como Telegram, facebook messenger, slack e etc. A arquitetura dessa framework é modular, ou seja, permite a integração com módulos internos, externos, ou módulos criados e personalizados pelo desenvolvedor. A proposta da framework é fornecer um ambiente para a criação de novos módulos que podem ser integrados como plugins wordpress \footnote{WordPress é um sistema livre e aberto de gestão de conteúdo para internet, baseado em PHP com banco de dados MySQL, executado em um servidor interpretador, voltado principalmente para a criação de páginas eletrônicas e blogs online.} (De fato, o wordpress para chatbots).
 
 Outras funcionalidades são gerenciamento do fluxo conversacional via interface, suporte ao processamento de várias linguagens, ferramenta para análise estatísticas e a possibilidade de intervenção humana quando o chatbot não consegue resolver ou entender algum problema. Além disso, possui uma estrutura que facilita a integração nos seguintes canais:
@@ -67,7 +67,7 @@ Outras funcionalidades são gerenciamento do fluxo conversacional via interface,
 \item Microsoft Teams\footnote{https://products.office.com/pt-br/microsoft-teams}
 \end{itemize}
 
-###Tabela de preços
+### Tabela de preços
 
 Apesar de ser \textit{open source}, a proposta do Botpress atualmente é que somente grandes empresas serão cobradas pelo uso da \textit{framework}. No futuro serviços e ferramentas \textit{premium} também serão ofertadas e cobradas. A figura \ref{fig:bot-planos} apresenta os planos.
 
@@ -81,7 +81,7 @@ Apesar de ser \textit{open source}, a proposta do Botpress atualmente é que som
 Fonte: https://botpress.io/pricing
 \end{figure}
 
-##Botkit
+## Botkit
 
 É uma framework open source que foi adquidira pela Microsoft em novembro de 2018. Essa framework disponibiliza nativamente funcões de desenvolvimento de chatbots simples e baseados em regras. Entrentanto, a principal vantagem é a flexibilidade de utilizar essa framework em conjunto com outras que possuem métodos de processamento de linguagem natural para atribuir maior inteligencia ao conversador. Além disso, possui uma estrutura que facilita a integração nos seguintes canais:
 
@@ -97,7 +97,7 @@ Fonte: https://botpress.io/pricing
 
 Devido a aquisição da framework pela Microsoft o site oficial recomenda a utilização do botkit com ferramentas de processamento de linguagem natural da empresa, Luis.ai. Além disso, a integração de um chatbot construido com o botkit em outros canais de comunicação como Telegram e whatsapp é recomendada utiliazando o Microsoft Bot Framework\footnote{https://dev.botframework.com/} onde também é possível realizar análise estatísticas das conversas realizadas no chatbot. O uso dos recursos essa framework Microsoft é pago, porém é possivel utilizar somente o botkit de forma independente.
 
-##IBM Watson
+## IBM Watson
 
 O IBM Watson é uma plataforma que oferece serviços de computação cognitiva. A IBM lançou a plataforma em 2011 e o nome é em homenagem ao CEO Thomas J. Watson.
 
@@ -121,7 +121,7 @@ Uso de inteligência artificial para identificar erros introduzidos por humanos 
 
 A possibilidade de integração em diversos canais é facilitada por essas plataforma pois essa funcionalidade é entregada ao desenvolvedor a partir do preenchimento de alguns formulários simples com informações sobre o canal. Alias um grande diferencial é que além dos canais convencionais é feita integração com dispositivos IOT\footnote{Internet das coisas, em inglês Internet of Things (IOT)}.
 
-###Tabela de Preços
+### Tabela de Preços
 
 Os custos relacionados ao uso da plataforma dependem do plano e recursos demandados. Existe um plano gratuido que dura um mês para testar a plataforma e após esse período precisa ser migrado para algum dos outros planos pagos. As figuras \ref{fig:basico} e \ref{fig:avancado} apresentam mais detalhes sobre os planos.
 
@@ -176,7 +176,7 @@ N° Mensagens & USD & Real\\
 
 \end{table}
 
-##Dialog Flow
+## Dialog Flow
 
 Dialog Flow é uma plataforma do google, antes chamada de API.AI, que fornece ferramentas para processamento de conversas em linguagem natural.
 
@@ -194,7 +194,7 @@ Além disso, uma vantagem distinta do Dialogflow é o seu programa de análise, 
 
 As integrações em um clique no Dialogflow, é possível gerenciar a integração do agente com o Google Assistente por meio do Actions on Google e muitas outras plataformas de mensagens famosas, como o Slack, o Facebook Messenger e o Twitter. Além disso, o Dialogflow facilita a exportação ou importação de agentes de/para outras plataformas de processamento de linguagem natural, como o Amazon Alexa e o Microsoft Cortana.
 
-###Tabela de preços
+### Tabela de preços
 
 O Dialog Flow possui um plano gratuito porém com funções limitadas e outro pago para empresas. Os preços e características de cada plano são apresentados na figura \ref{fig:dialog-precos}.
 
@@ -280,7 +280,7 @@ Botkit & X & X & & & X & X & X\\
 
 \end{table}
 
-##Escolha das Frameworks
+## Escolha das Frameworks
 
 Decidir qual framework será mais adequada para um projeto de software não é tarefa trivial. Em seu famoso artigo \textit{“No Silver Bullet — Essence and Accident in Software Engineering"} (Não há bala de prata — Essência e Acidente na Engenharia de Software em português), Frederick P. Brooks afirmou, em 1986, que não existe nenhuma metodologia de desenvolvimento ou técnicas de gestão que consiga aumentar significativamente a produtividade e confiabilidade da engenharia de software. Assim, de forma analoga, não existe a framework perfeita e, portanto, a escolha da mesma deve levar em conta os requisitos e restrições do projeto em questão.
 
