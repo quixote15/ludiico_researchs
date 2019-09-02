@@ -8,18 +8,18 @@ Uma pesquisa na plataforma stack overflow foi realizada estabelecer um indicativ
 
 Devido a alta popularidade, o IBM Watson Assistant e Dialog Flow foram selecionados para uma comparação apesar de não serem open source. Vale ressaltar que o Botpress e IBM Watson possuem suas próprias áreas de perguntas onde a comunidade de desenvolvedores interage.
 
-\begin{itemize}
-\item Botpres \footnote{Fórum em :https://help.botpress.io/top}: 383 perguntas
-\item IBM Watson Assistant \footnote{Fórum em: https://developer.ibm.com/answers/smartspace/watson/index.html}: 4063 perguntas
-\end{itemize}
+####Unordered list (\*)
+
+- [Botpress ](https://help.botpress.io/top "Botpress "): 383 perguntas
+- [IBM Watson Assistant ](https://developer.ibm.com/answers/smartspace/watson/index.html "IBM Watson Assistant ") : 4063 perguntas
 
 O Quadro apresenta as frameworks analisados e os URls para acesso a estas. Além disso, responde a primeira questão de pesquisa.
 
 Quais frameworks open source são usadas atualmente desenvolver chatbots ?
 
 \begin{table}[H]
-  
- \begin{center}
+
+\begin{center}
 \begin{tabular}{| p{3cm}| p{3cm}| p{3cm}|}
 \hline
 Framework & URL & Licensa\\
@@ -32,11 +32,11 @@ Botpress & https://botpress.io/ & AGPLv3 e Licensa proprietária Botpress \\
 \hline
 Botkit & https://botkit.ai/ & MIT license \\
 \hline
-  
- \end{tabular}
+
+\end{tabular}
 \caption{ Frameworks e respectivas urls e licensas}
-  
- \end{center}
+
+\end{center}
 
 \end{table}
 
@@ -49,7 +49,7 @@ A framework Rasa ou Rasa Stack possui um conjunto de ferramentas de aprendizado 
 \begin{enumerate}
 \item Rasa Core (Núcleo): È uma ferramenta que usa aprendizado de máquina para inferir possíveis ações a serem executadas pelo chatbot. O aprendizado de máquina é feito com o constante feedback do usuário, e a partir disso, são calculadas as probabilidades de execução de cada ação. Essa abordagem é conhecida como aprendizado iterativo.
 \item Rasa NLU: È uma ferramenta para processamento de linguaguem natural open source capaz de classificar intenções dos usuários e extrair entidadades em chatbots. Sendo assim, é possível extrair dados estruturados de uma conversa em linguagem natural. Vale ressaltar que esse módulo pode ser executado em qualquer ambiente sem depender de chamadas á api's externas como as do Google, IBM Watson ou Microsoft.
-  
+
 \end{enumerate}
 
 A integração com canais de comunicação nessa framework é possível de forma programática nos seguintes canais:
@@ -132,8 +132,8 @@ As características do Watson Assistent são:
 Uso de inteligência artificial para identificar erros introduzidos por humanos nos dados de treinamento.
 \item Recomendação de Intenção: Uso dos dados de conversas existentes para treinar o assistente mais rápido.
 \item Habilidade de Busca: Realiza busca em dados desestruturados para ampliar o conhecimento do assistente
-  
- \item Linguagem natural: Processa linguagem natural e realiza conversão tanto de voz para texto quanto de texto para voz.
+
+\item Linguagem natural: Processa linguagem natural e realiza conversão tanto de voz para texto quanto de texto para voz.
 
 \end{itemize}
 
@@ -169,21 +169,21 @@ Para a maioria das aplicações o plano lite parece ser adequado, entretanto, qu
 A tabela \ref{tabela:simulacaoIBM} foi elabora para fornecer uma visão geral dos custo associados ao uso da plataforma da IBM.
 
 \begin{table}[H]
-  
- \begin{center}
+
+\begin{center}
 \begin{tabular}{| p{3cm}| p{3cm} | p{3cm}|}
 \hline
 N° Mensagens & USD & Real\\
 \hline
 2.000 & 5,00 & 18,68 \\
-  
- \hline
+
+\hline
 5.000 & 12,5 & 45,62 \\
-  
- \hline
+
+\hline
 10.000 & 25,00 & 93,25 \\
-  
- \hline
+
+\hline
 30.000 & 75,00 & 279,75\\
 \hline
 
@@ -232,8 +232,8 @@ Fonte: https://cloud.google.com/dialogflow/pricing
 A partir da exploração dos 4 aplicativos 7 características foram extraídas. As principais características encontradas nas frameworks estão discriminadas no Quadro \ref{tabela:caracteristicas}, assim como suas respectivas identiﬁcações.
 
 \begin{table}[H]
-  
- \begin{center}
+
+\begin{center}
 \begin{tabular}{| p{5cm}| p{5cm}|}
 \hline
 Identificação & Características\\
@@ -267,8 +267,8 @@ Quais frameworks realizam processamento de linguagem natural ?
 Quais são as características destas frameworks?
 
 \begin{table}[H]
-  
- \begin{center}
+
+\begin{center}
 \begin{tabular}{| p{2cm}| p{1cm}| p{1cm} | p{1cm}| p{1cm}| p{1cm}| p{1cm}| p{1cm}|}
 \hline
 & C1 & C2 & C3 & C4 & C5 & C6 & C7\\
@@ -276,20 +276,20 @@ Quais são as características destas frameworks?
 Dialog Flow & & & X & X & X & & \\
 \hline
 Watson Assistant & & & X & X & & & \\
-  
- \hline
+
+\hline
 Rasa & X & & X & X & & & \\
-  
- \hline
+
+\hline
 Wit.ai & X & & X & X & X & & \\
-  
- \hline
+
+\hline
 Botpress & X & X & X & & & X & X\\
-  
- \hline
+
+\hline
 Botkit & X & X & & & X & X & X\\
-  
- \hline
+
+\hline
 
     \end{tabular}
     \caption{ Principais características identificadas nas frameworks}
@@ -309,7 +309,7 @@ Sendo assim, os requisitos gerais e suficientemente amplos de forma que sirvam d
 \item\textbf{ IA:} O chatbot deve possuir algoritmos de aprendizado de máquina para que possa entender contextos de conversação e ampliar sua base de conhecimento.
 \item \textbf{Canais: } O chatbot deve estar presente em mais de um canal de comunicação
 \item\textbf{ Hospedagem:} O chatbot não deve depender de um serviço de hospedagem específico podendo ser hospedado em qualquer infraestrutura disponível e de acordo com as restrições orçamentárias do projeto.
-  
+
 \end{itemize}
 
 Vale ressaltar que um outro critério importante a se considerar na escolha da framework é o tamanho da comunidade que a mantém atualizada e realiza correções frequentes. Nesse ponto, todas as frameworks selecionadas na fase de levantamento possuem comunidade ativa.
