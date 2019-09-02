@@ -8,8 +8,6 @@ Uma pesquisa na plataforma stack overflow foi realizada estabelecer um indicativ
 
 Devido a alta popularidade, o IBM Watson Assistant e Dialog Flow foram selecionados para uma comparação apesar de não serem open source. Vale ressaltar que o Botpress e IBM Watson possuem suas próprias áreas de perguntas onde a comunidade de desenvolvedores interage.
 
-####Unordered list (\*)
-
 - [Botpress ](https://help.botpress.io/top "Botpress "): 383 perguntas
 - [IBM Watson Assistant ](https://developer.ibm.com/answers/smartspace/watson/index.html "IBM Watson Assistant ") : 4063 perguntas
 
@@ -17,28 +15,12 @@ O Quadro apresenta as frameworks analisados e os URls para acesso a estas. Além
 
 Quais frameworks open source são usadas atualmente desenvolver chatbots ?
 
-\begin{table}[H]
+Framework | URL | Licensa 
+------------- | ------------- | -------------
+Rasa  | https://rasa.com/ | Apache 2.0
+Botpress  | https://botpress.io/ | AGPLv3 e Licensa proprietária
+Botkit  | https://botkit.ai/  | MIT license
 
-\begin{center}
-\begin{tabular}{| p{3cm}| p{3cm}| p{3cm}|}
-\hline
-Framework & URL & Licensa\\
-\hline
-Rasa & https://rasa.com/ & Apache 2.0 \\
-\hline
-Wit.ai & https://wit.ai/ & MIT License \\
-\hline
-Botpress & https://botpress.io/ & AGPLv3 e Licensa proprietária Botpress \\
-\hline
-Botkit & https://botkit.ai/ & MIT license \\
-\hline
-
-\end{tabular}
-\caption{ Frameworks e respectivas urls e licensas}
-
-\end{center}
-
-\end{table}
 
 As seções seguintes descrevem o que foi encontrado na exploração destas frameworks, apresentando como cada uma delas funciona.
 
