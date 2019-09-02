@@ -1,0 +1,121 @@
+
+\chapter{Fundamentação Teórica}
+
+Esse capítulo descreve os principais conceitos para entender esse trabalho. Na seção 2.1 um resumo das principais características, definições e importância sobre interfaces de conversação, ou \textit{chabots}, é apresentada. Nas seções seguintes conceitos como canais de comunicação, tipos de \textit{chatbot} e \textit{engine} de \textit{chatbot} são apresentados.
+
+
+
+\section{Processamento de Linguagem Natural}
+
+O processamento da linguagem natural (PLN) trata computacionalmente os diversos
+aspectos da comunicação humana, como sons, palavras, sentenças e discursos,
+considerando formatos e referências, estruturas e significados, contextos e usos. Dessa forma, o objetivo da área de Processamento de Linguagem Natural é analisar a linguagem utilizada pelo seres humanos \cite{manning1999foundations}. 
+
+De acordo com o canal \citeonline{nlp2017botsbrasil}, o PLN é a subárea da Inteligência Artificial (IA) que estuda a capacidade e as limitações de uma máquina em entender a linguagem dos seres humanos. Em sentido bem amplo, podemos dizer que o PLN visa fazer o computador se comunicar em linguagem humana, nem sempre necessariamente em todos os níveis de entendimento e/ou geração de sons, palavras, sentenças e discursos. Estes níveis são:
+
+\begin{itemize}
+
+\item Fonético e fonológico: do relacionamento das palavras com os sons que
+produzem;
+\item Morfológico: da construção das palavras a partir unidades de significado
+primitivas e de como classificá-las em categorias morfológicas;
+\item Sintático: do relacionamento das palavras entre si, cada uma assumindo seu
+papel estrutural nas frases, e de como as frases podem ser partes de outras,
+constituindo sentenças;
+\item Semântico: do relacionamento das palavras com seus significados e de como
+eles são combinados para formar os significados das sentenças; 
+\item Pragmático: do uso de frases e sentenças em diferentes contextos, afetando o
+significado.
+
+\end{itemize}
+
+
+
+\section{Chatbot}
+
+
+ O termo \textit{chatbot} vem do inglês onde \textit{chat} significa conversador e \textit{bot} é uma abreviação para \textit{robot} que significa robô. Um robô de conversação, também chamado de \textit{chatbot}, \textit{smartbot}, \textit{talkbot}, \textit{chatterbot}, \textit{bot},  agente interativo, interface de conversação, é a tecnologia que visa interação de computadores com humanos por meio da linguagem natural. 
+
+
+
+De maneira complementar, \citeonline{sganderla2003bonobot} definem \textit{chatbots}
+como sistemas computacionais que simulam o comportamento humano em conversas e que são capazes
+de analisar, interpretar e responder perguntas.
+
+Analogamente, \citeonline{paikari2018framework} destaca que o termo \textit{bot}, quando utilizado isoladamente, pode ser definido como uma ferramenta de software capaz de automatizar tarefas repetivivas como \textit{web crawling}, cálculos, geração de relatórios e etc. Nesse sentido, \textit{chatbots} são um tipo de \textit{bot} cuja tarefa é interagir com usuários por meio de diálogos usuais de texto ou voz.
+
+Alguns \textit{chatbots} podem, por exemplo, monitorar o que os usuários digitam em canais como Facebook ou Telegram e acionar determinadas ações quando certos padrões estão presentes \cite{paikari2018framework}. 
+
+A assistente da Apple, a Siri, \footnote{https://www.apple.com/br/siri/}
+e a assistente da Microsoft,
+Cortana \footnote{https://support.microsoft.com/pt-br/help/17214/windows-10-what-is}, podem se engajar em conversas e desempenhar funções como responder sobre condições climáticas ou ativando o alarme do celular quando solicitado.
+
+
+\subsection{Tipos de chabot}
+
+\textit{Chabots} geralmente são classificados em dois tipos:
+
+\begin{enumerate}
+    \item \textbf{Baseados em regras:} \textit{Chabot} que funciona com um conjunto de regras pré definidas e que responde o usuário a partir de palavras chaves pré-estabelecidas. Esse tipo de chabot é limitado, já que seu comportamento é programado e o fluxo de perguntas e respostas não permitem desvios. De maneira geral, se o usuário escreve ou fala algo para o chatbot não está no seu conjunto de palavras chaves pré-programadas o fluxo não segue ou é interrompido.
+    
+    \item \textbf{Baseados em Inteligência Artificial (AI): }\textit{Chabot} que dá a impressão de ser mais inteligente por usar processamento de linguagem natural, não somente casamento de padrão e regras pré-definidas. Além de possibilitar o aprendizado de novos fluxos, se tornando mais inteligente, na medida que interage e mantém informações sobre os estados de conversação.
+\end{enumerate}
+
+
+De acordo com \citeonline{paikari2018framework}, \textit{chatbots} podem se engajar em conversas mais significativas e contextuais com os usuários utilizando processamento de linguagem natural (PLN) e Inteligência Artificial (IA). Além do processamento de linguagem natural, \textit{chatbots} baseado em IA podem utilizar algorítimos que reconhecimento de voz e aprendizado de máquina.
+
+
+\subsection{Canais de interação}
+
+Canais de interação são aplicações, que executam em dispositivos \textit{Desktop} ou mobile, que fornecem um meio de comunicação dos usuários com o \textit{chatbot}.
+
+\cite{brandtzaeg2017people} mostra que desde 2016, muitos serviços de conversação, incluindo
+serviços como o Facebook Messenger, Slack,
+Telegram, Skype, LINE e WeChat lançaram \textit{Chatbots}. Fornecendo assim, APIs aos desenvolvedores para que eles pudessem construir novos tipos de aplicativos para interação e serviços de informação.
+
+È importante destacar que, segundo  \citeonline{brandtzaeg2017people}, \textit{chatbots} também são utilizados em paginas web e aplicativos mobile como um meio comum de interação com dados e serviços.
+
+De acordo com \citeonline{kar2016applying}, em algumas abordagens de implementação os canais de interação possuem uma interface intermediária, também chamado de conector, que pode utilizar \textit{Webhooks} \footnote{\textit{Webhooks} são \textit{callbacks} HTTP que são definidos pelo utilizador do serviço} para realizar a comunicação.
+
+Em suma, os principais canais de comunicação para \textit{chabots} são:
+
+\begin{itemize}
+    \item Serviços mensageiros
+    \item Páginas e sistemas web
+    \item Aplicativos mobile
+\end{itemize}
+
+
+
+\subsection{Engine Chatbot}
+
+
+
+A \textit{engine} é responsável por transformar linguagem natural em uma ação entendível por máquinas e segundo \citeonline{kar2016applying}, é componente mais importante de um \textit{chatbot}. No caso de chatbots baseados em regras a engine mapeia as palavras chaves para o conjunto de comandos definidos previamente. De forma similiar, chatbots que utilizam inteligencia artificial utiliza algoritmos para classificar probabilisticamente as intenções do usuário, criar contextos e significados semânticos quando acontecem novas interações.
+
+De acordo com \citeonline{kar2016applying}, as \textit{engines} de \textit{chatbots} geralmente são desenvolvidas utilizando-se vários modelos de Processamento de Linguagem Natural e Aprendizado de Máquina para prover níveis aceitáveis de precisão.  Entretanto, chatbots baseados em regras geralmente só utilizam processamento de linguagem natural assim mapear as entradas do usuário ao seu conjunto limitado comandos.
+
+Com o objetivo de facilitar o trabalho de desenvolvedores de \textit{chatbots} algumas empresas oferecem essa \textit{engine} como um servico \footnote{Esse tipo de abordagem é conhecido como \textit{Software-as-aService(SaaS)},em português Software como um serviço, ou \textit{AI-as-a-service}, em português Inteligência artificial como um serviço }. Exemplos desse tipo de serviço são: Wit.ai\footnote{https://wit.ai} e IBM Watson Assistant \footnote{https://www.ibm.com/cloud/watson-assistant/}. Além disso, também existem diversas frameworks de código aberto que fornecem tais recursos.
+
+
+Os principais conceitos em uma \textit{engine} de \textit{chatbot} são: Entidades, Intenções, Contexto, e Diálogo.
+
+
+\begin{itemize}
+    \item \textbf{Entidades}: As entidades são informações específicas de um domínio, que são
+extraídas de uma expressão no qual mapeiam as frases de linguagem natural para as suas frases
+canônicas com o objetivo de entender a intenção \cite{kar2016applying}. Além disso, ajudam a identificar os parâmetros necessários para tomar ações específicas \cite{kar2016applying}. O \textit{email} de um usuário, por exemplo, seria uma entidade que o \textit{chatbot} poderia utilizar para realizar a ação de enviar documentos ou notificações.
+
+    \item \textbf{Intenções}: As intenções são cruciais em uma aplicação de \textit{chatbot}. As intenções
+representam o que os usuários estão buscando realizar ou saber, dada aquela mensagem \cite{kar2016applying}. 
+    \item \textbf{Contexto}:Determinar o contexto de uma expressão criada pelo usuário é uma
+funcionalidade considerada importante em \textit{chatbots} modernos. O contexto pode ser usado
+para lidar com situações onde a a entrada do usuário seja muito vaga ou possui múltiplos
+significados baseado no histórico de conversação. Contextos representam a habilidade dos
+agentes de manter o estado da conversa para utilizar como forma de identificar a intenção do
+usuário \cite{kar2016applying}.
+    \item \textbf{Diálogo}: O diálogo utiliza as intenções, as entidades e o contexto da aplicação para
+retornar uma resposta baseado na entrada do usuário.
+    
+\end{itemize}
+

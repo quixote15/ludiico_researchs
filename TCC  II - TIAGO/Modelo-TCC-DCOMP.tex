@@ -1,0 +1,96 @@
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Acadêmico em conformidade com 
+% as normas da ABNT
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[english, 
+               brazil, 
+               bsc] %Opções bsc (TCC) e msc (Mestrado)
+               {dcomp-abntex2}
+
+% Geração de dummy text
+% Retirar para a versão final do documento
+
+
+
+
+%Compila o indice
+\makeindex
+
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+\pretextual
+
+\titulo{Projeto de Integração de Chatbot em diferentes interfaces de comunicação humano-computador}
+\autor{Tiago Conceição dos santos}
+\orientador{Hendrik Teixeira Macedo }
+\coorientador{Gilton José Ferreira Da Silva }
+\curso{Ciência da Computação}
+
+\imprimircapa
+\imprimirfolhaderosto*
+
+   
+\include{Pre_Textual/Dedicatoria}
+\include{Pre_Textual/Agradecimentos}
+\include{Pre_Textual/Epigrafe}
+\include{Pre_Textual/Resumo}
+\include{Pre_Textual/Abstract}
+    
+% Lista de Figuras
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+
+
+% Lista de Tabelas
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+
+    
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+\include{Conteudo/Introducao}
+\include{Conteudo/fundamentacao}
+\include{Conteudo/revisao-sistematica}
+\include{Conteudo/Desenvolvimento}
+\include{Conteudo/Conclusao}
+
+\bibliography{Bibliografia}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+
+\renewcommand{\chapnumfont}{\chaptitlefont}
+\renewcommand{\afterchapternum}{}
+
+
+% ----------------------------------------------------------
+% 
+%    \include{Pos_Textual/Apendices}
+%    \include{Pos_Textual/Anexos}
+% ----------------------------------------------------------
+
+\end{document}
