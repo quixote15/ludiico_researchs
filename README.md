@@ -160,9 +160,9 @@ Quais frameworks realizam processamento de linguagem natural ?
 
 Quais são as características destas frameworks?
 
-| p{2cm}| p{1cm}| p{1cm} | p{1cm}| p{1cm}| p{1cm}| p{1cm}| p{1cm}|
-| --- | --- | --- | --- | --- | --- | --- |
+
 | C1  | C2  | C3  | C4  | C5  | C6  | C7 |
+| --- | --- | --- | --- | --- | --- | --- |
 | Dialog Flow | | | X | X | X | |  |
 | Watson Assistant | | | X | X | | |  |
 | Rasa | X | | X | X | | |  |
