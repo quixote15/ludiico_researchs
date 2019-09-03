@@ -15,12 +15,11 @@ O Quadro apresenta as frameworks analisados e os URls para acesso a estas. Além
 
 Quais frameworks open source são usadas atualmente desenvolver chatbots ?
 
-Framework | URL | Licensa 
-------------- | ------------- | -------------
-Rasa  | https://rasa.com/ | Apache 2.0
-Botpress  | https://botpress.io/ | AGPLv3 e Licensa proprietária
-Botkit  | https://botkit.ai/  | MIT license
-
+| Framework | URL                  | Licensa                       |
+| --------- | -------------------- | ----------------------------- |
+| Rasa      | https://rasa.com/    | Apache 2.0                    |
+| Botpress  | https://botpress.io/ | AGPLv3 e Licensa proprietária |
+| Botkit    | https://botkit.ai/   | MIT license                   |
 
 As seções seguintes descrevem o que foi encontrado na exploração destas frameworks, apresentando como cada uma delas funciona.
 
@@ -28,24 +27,19 @@ As seções seguintes descrevem o que foi encontrado na exploração destas fram
 
 A framework Rasa ou Rasa Stack possui um conjunto de ferramentas de aprendizado de máquina para que desenvolvedores possam criar chatbots contextuais, diferente de daqueles baseados em regras pré-definidas. Essa framework é composta de dois módulos que são independentes e podem ser usados separadamente. O módulo principal (Rasa Core) e módulo de processamento de linguagem natural (chamado de Rasa natural language understanding ou Rasa NLU) são detalhados a seguir:
 
-\begin{enumerate}
-\item Rasa Core (Núcleo): È uma ferramenta que usa aprendizado de máquina para inferir possíveis ações a serem executadas pelo chatbot. O aprendizado de máquina é feito com o constante feedback do usuário, e a partir disso, são calculadas as probabilidades de execução de cada ação. Essa abordagem é conhecida como aprendizado iterativo.
-\item Rasa NLU: È uma ferramenta para processamento de linguaguem natural open source capaz de classificar intenções dos usuários e extrair entidadades em chatbots. Sendo assim, é possível extrair dados estruturados de uma conversa em linguagem natural. Vale ressaltar que esse módulo pode ser executado em qualquer ambiente sem depender de chamadas á api's externas como as do Google, IBM Watson ou Microsoft.
-
-\end{enumerate}
+- Rasa Core (Núcleo): È uma ferramenta que usa aprendizado de máquina para inferir possíveis ações a serem executadas pelo chatbot. O aprendizado de máquina é feito com o constante feedback do usuário, e a partir disso, são calculadas as probabilidades de execução de cada ação. Essa abordagem é conhecida como aprendizado iterativo.
+- Rasa NLU: È uma ferramenta para processamento de linguaguem natural open source capaz de classificar intenções dos usuários e extrair entidadades em chatbots. Sendo assim, é possível extrair dados estruturados de uma conversa em linguagem natural. Vale ressaltar que esse módulo pode ser executado em qualquer ambiente sem depender de chamadas á api's externas como as do Google, IBM Watson ou Microsoft.
 
 A integração com canais de comunicação nessa framework é possível de forma programática nos seguintes canais:
 
-\begin{itemize}
-\item Web
-\item Facebook Messenger
-\item Slack
-\item Twilio
-\item Google Hangouts\footnote{https://hangouts.google.com}
-\item Microsoft Teams\footnote{https://products.office.com/pt-br/microsoft-teams}
-\item Webex Teams\footnote{https://www.webex.com}
-\item Conectores customizados
-\end{itemize}
+- Web
+- Facebook Messenger
+- Slack
+- Twilio
+- Google Hangouts\footnote{https://hangouts.google.com}
+- Microsoft Teams\footnote{https://products.office.com/pt-br/microsoft-teams}
+- Webex Teams\footnote{https://www.webex.com}
+- Conectores customizados
 
 ## Wit.ai
 
@@ -56,46 +50,35 @@ Essa plataforma foi adquirida pelo facebook em 2015 e, portanto, pode ser integr
 A desvantagem do Wit.ai é o fato ser uma solução hospedada pelo facebook onde os recursos são centralizados e somente disponíveis via requisições http. Além do mais, só permite integração com o Facebook Messenger.
 
 ## Botpres
-Botpres é uma framework que possibilita a integração com as principais plataformas de mensagens como Telegram, facebook messenger, slack e etc. A arquitetura dessa framework é modular, ou seja, permite a integração com módulos internos, externos, ou módulos criados e personalizados pelo desenvolvedor. A proposta da framework é fornecer um ambiente para a criação de novos módulos que podem ser integrados como plugins wordpress \footnote{WordPress é um sistema livre e aberto de gestão de conteúdo para internet, baseado em PHP com banco de dados MySQL, executado em um servidor interpretador, voltado principalmente para a criação de páginas eletrônicas e blogs online.} (De fato, o wordpress para chatbots).
+
+Botpres é uma framework que possibilita a integração com as principais plataformas de mensagens como Telegram, facebook messenger, slack e etc. A arquitetura dessa framework é modular, ou seja, permite a integração com módulos internos, externos, ou módulos criados e personalizados pelo desenvolvedor. A proposta da framework é fornecer um ambiente para a criação de novos módulos que podem ser integrados como plugins wordpress(De fato, o wordpress para chatbots).
 
 Outras funcionalidades são gerenciamento do fluxo conversacional via interface, suporte ao processamento de várias linguagens, ferramenta para análise estatísticas e a possibilidade de intervenção humana quando o chatbot não consegue resolver ou entender algum problema. Além disso, possui uma estrutura que facilita a integração nos seguintes canais:
 
-\begin{itemize}
-\item Web
-\item Facebook Messenger
-\item Slack
-\item Microsoft Teams\footnote{https://products.office.com/pt-br/microsoft-teams}
-\end{itemize}
+- Web
+- Facebook Messenger
+- Slack
+- Microsoft Teams
 
 ### Tabela de preços
 
-Apesar de ser \textit{open source}, a proposta do Botpress atualmente é que somente grandes empresas serão cobradas pelo uso da \textit{framework}. No futuro serviços e ferramentas \textit{premium} também serão ofertadas e cobradas. A figura \ref{fig:bot-planos} apresenta os planos.
+Apesar de ser open source, a proposta do Botpress atualmente é que somente grandes empresas serão cobradas pelo uso da framework. No futuro serviços e ferramentas premium também serão ofertadas e cobradas.
 
-\begin{figure}[H]
-\caption{Planos da framework botpress}
-
-\centering
-\includegraphics[scale=0.5]{Imagens/botpress-precos.png}
-
-\label{fig:bot-planos}
-Fonte: https://botpress.io/pricing
-\end{figure}
+![Planos da framework botpress](https://github.com/quixote15/ludiico_researchs/blob/master/TCC-TIAGO/Imagens/botpress-precos.png)
 
 ## Botkit
 
 É uma framework open source que foi adquidira pela Microsoft em novembro de 2018. Essa framework disponibiliza nativamente funcões de desenvolvimento de chatbots simples e baseados em regras. Entrentanto, a principal vantagem é a flexibilidade de utilizar essa framework em conjunto com outras que possuem métodos de processamento de linguagem natural para atribuir maior inteligencia ao conversador. Além disso, possui uma estrutura que facilita a integração nos seguintes canais:
 
-\begin{itemize}
-\item Web
-\item Facebook Messenger
-\item Slack
-\item Twilio
-\item Google Hangouts\footnote{https://hangouts.google.com}
-\item Microsoft Teams\footnote{https://products.office.com/pt-br/microsoft-teams}
-\item Webex Teams\footnote{https://www.webex.com}
-\end{itemize}
+- Web
+- Facebook Messenger
+- Slack
+- Twilio
+- Google Hangouts
+- Microsoft Teams
+- Webex Teams
 
-Devido a aquisição da framework pela Microsoft o site oficial recomenda a utilização do botkit com ferramentas de processamento de linguagem natural da empresa, Luis.ai. Além disso, a integração de um chatbot construido com o botkit em outros canais de comunicação como Telegram e whatsapp é recomendada utiliazando o Microsoft Bot Framework\footnote{https://dev.botframework.com/} onde também é possível realizar análise estatísticas das conversas realizadas no chatbot. O uso dos recursos essa framework Microsoft é pago, porém é possivel utilizar somente o botkit de forma independente.
+Devido a aquisição da framework pela Microsoft o site oficial recomenda a utilização do botkit com ferramentas de processamento de linguagem natural da empresa, Luis.ai. Além disso, a integração de um chatbot construido com o botkit em outros canais de comunicação como Telegram e whatsapp é recomendada utiliazando o Microsoft Bot Framework onde também é possível realizar análise estatísticas das conversas realizadas no chatbot. O uso dos recursos essa framework Microsoft é pago, porém é possivel utilizar somente o botkit de forma independente.
 
 ## IBM Watson
 
@@ -107,74 +90,35 @@ O IBM Watson é uma plataforma que oferece outros serviços na nuvem, entretanto
 
 As características do Watson Assistent são:
 
-\begin{itemize}
-\item Conteúdo pré-construído: Adicione atendimento ao cliente e outros pacotes específicos de cada área (finança, saúde, etc) prontos para iniciar seu assistente.
-\item Desambiguação: Quando uma requisição do usuário não está clara, o Watson irá automaticamente propor múltiplos opções em vez de responder incorretamente.
-\item Resolução de conflitos de Intenção:
-Uso de inteligência artificial para identificar erros introduzidos por humanos nos dados de treinamento.
-\item Recomendação de Intenção: Uso dos dados de conversas existentes para treinar o assistente mais rápido.
-\item Habilidade de Busca: Realiza busca em dados desestruturados para ampliar o conhecimento do assistente
+- Conteúdo pré-construído: Adicione atendimento ao cliente e outros pacotes específicos de cada área (finança, saúde, etc) prontos para iniciar seu assistente.
+- Desambiguação: Quando uma requisição do usuário não está clara, o Watson irá automaticamente propor múltiplos opções em vez de responder incorretamente.
+- Resolução de conflitos de Intenção:
+  Uso de inteligência artificial para identificar erros introduzidos por humanos nos dados de treinamento.
+- Recomendação de Intenção: Uso dos dados de conversas existentes para treinar o assistente mais rápido.
+- Habilidade de Busca: Realiza busca em dados desestruturados para ampliar o conhecimento do assistente
 
-\item Linguagem natural: Processa linguagem natural e realiza conversão tanto de voz para texto quanto de texto para voz.
+- Linguagem natural: Processa linguagem natural e realiza conversão tanto de voz para texto quanto de texto para voz.
 
-\end{itemize}
-
-A possibilidade de integração em diversos canais é facilitada por essas plataforma pois essa funcionalidade é entregada ao desenvolvedor a partir do preenchimento de alguns formulários simples com informações sobre o canal. Alias um grande diferencial é que além dos canais convencionais é feita integração com dispositivos IOT\footnote{Internet das coisas, em inglês Internet of Things (IOT)}.
+A possibilidade de integração em diversos canais é facilitada por essas plataforma pois essa funcionalidade é entregada ao desenvolvedor a partir do preenchimento de alguns formulários simples com informações sobre o canal. Alias um grande diferencial é que além dos canais convencionais é feita integração com dispositivos IOT(Internet das coisas, em inglês Internet of Things (IOT)).
 
 ### Tabela de Preços
 
-Os custos relacionados ao uso da plataforma dependem do plano e recursos demandados. Existe um plano gratuido que dura um mês para testar a plataforma e após esse período precisa ser migrado para algum dos outros planos pagos. As figuras \ref{fig:basico} e \ref{fig:avancado} apresentam mais detalhes sobre os planos.
+Os custos relacionados ao uso da plataforma dependem do plano e recursos demandados. Existe um plano gratuido que dura um mês para testar a plataforma e após esse período precisa ser migrado para algum dos outros planos pagos. As figuras abaixo apresentam mais detalhes sobre os planos.
 
-\begin{figure}[H]
-\caption{Planos básicos da plataforma IBM Watson Assistant}
+![Planos básicos da plataforma IBM Watson Assistant](https://github.com/quixote15/ludiico_researchs/blob/master/TCC-TIAGO/Imagens/ibm-basic.png)
 
-\centering
-\includegraphics[scale=0.5]{Imagens/ibm-basic.png}
-
-\label{fig:basico}
-
-Fonte: https://www.ibm.com/cloud/watson-assistant/pricing/
-\end{figure}
-
-\begin{figure}[H]
-\caption{Planos avançados da plataforma IBM Watson Assistant}
-
-\centering
-\includegraphics[scale=0.5]{Imagens/ibm-other.png}
-
-\label{fig:avancado}
-Fonte: https://www.ibm.com/cloud/watson-assistant/pricing/
-\end{figure}
+![Planos avançados da plataforma IBM Watson Assistant](https://github.com/quixote15/ludiico_researchs/blob/master/TCC-TIAGO/Imagens/ibm-other.png)
 
 Para a maioria das aplicações o plano lite parece ser adequado, entretanto, quando existe a necessidade de utilizar outros recursos é preciso entrar em contato com a IBM para que se possa obter um orçamento dos custos.
 
-A tabela \ref{tabela:simulacaoIBM} foi elabora para fornecer uma visão geral dos custo associados ao uso da plataforma da IBM.
+A tabela seguinte foi elaborada para fornecer uma visão geral dos custo associados ao uso da plataforma da IBM.
 
-\begin{table}[H]
-
-\begin{center}
-\begin{tabular}{| p{3cm}| p{3cm} | p{3cm}|}
-\hline
-N° Mensagens & USD & Real\\
-\hline
-2.000 & 5,00 & 18,68 \\
-
-\hline
-5.000 & 12,5 & 45,62 \\
-
-\hline
-10.000 & 25,00 & 93,25 \\
-
-\hline
-30.000 & 75,00 & 279,75\\
-\hline
-
-    \end{tabular}
-    \caption{Simulação de preços baseada no plano Lite do IBM Watson Assistant}
-    \label{tabela:simulacaoIBM}
-    \end{center}
-
-\end{table}
+| N° Mensagens | USD   | Real} |
+| ------------ | ----  | ----- |
+| 2.000        | 5,00  | 18,68 |
+| 5.000        | 12,5  | 45,62 |
+| 10.000       | 25,00 | 93,25 |
+| 30.000       | 75,00 | 279,75|
 
 ## Dialog Flow
 
