@@ -113,12 +113,12 @@ Para a maioria das aplicações o plano lite parece ser adequado, entretanto, qu
 
 A tabela seguinte foi elaborada para fornecer uma visão geral dos custo associados ao uso da plataforma da IBM.
 
-| N° Mensagens | USD   | Real} |
-| ------------ | ----  | ----- |
-| 2.000        | 5,00  | 18,68 |
-| 5.000        | 12,5  | 45,62 |
-| 10.000       | 25,00 | 93,25 |
-| 30.000       | 75,00 | 279,75|
+| N° Mensagens | USD   | Real}  |
+| ------------ | ----- | ------ |
+| 2.000        | 5,00  | 18,68  |
+| 5.000        | 12,5  | 45,62  |
+| 10.000       | 25,00 | 93,25  |
+| 30.000       | 75,00 | 279,75 |
 
 ## Dialog Flow
 
@@ -126,131 +126,74 @@ Dialog Flow é uma plataforma do google, antes chamada de API.AI, que fornece fe
 
 A principais características dessas plataforma são :
 
-\begin{itemize}
-\item Processamento de Linguagem Natural: Processamento de dados em linguagem natural e classificação de intenção e entidades
-\item Aprendizado de máquina: Uso de dados para treinamento e melhora da interação aplicada ao domínio do problema
-\item Contexto: Controle do estado atual, ou dados , das conversas com os usuários. Esses dados podem ser usados como input ou output para eventos ou qualquer eventual processamento.
-\item Pode ser integrado com qualquer plataforma de mensageiros como Facebok, slack etc. Além de ser integrável com dispositivos móveis e weareables.
-\item Análise estatística dos dados
-\end{itemize}
+- Processamento de Linguagem Natural: Processamento de dados em linguagem natural e classificação de intenção e entidades
+- Aprendizado de máquina: Uso de dados para treinamento e melhora da interação aplicada ao domínio do problema
+- Contexto: Controle do estado atual, ou dados , das conversas com os usuários. Esses dados podem ser usados como input ou output para eventos ou qualquer eventual processamento.
+- Pode ser integrado com qualquer plataforma de mensageiros como Facebok, slack etc. Além de ser integrável com dispositivos móveis e weareables.
+- Análise estatística dos dados
 
-Além disso, uma vantagem distinta do Dialogflow é o seu programa de análise, chamado de chatbase. O Google já é um elemento importante da análise da web e de usuários, graças à sua plataforma do Google Analytics \footnote{https://analytics.google.com/analytics/} estabelecida há muito tempo.
+Além disso, uma vantagem distinta do Dialogflow é o seu programa de análise, chamado de chatbase. O Google já é um elemento importante da análise da web e de usuários, graças à sua plataforma do Google Analytics estabelecida há muito tempo.
 
 As integrações em um clique no Dialogflow, é possível gerenciar a integração do agente com o Google Assistente por meio do Actions on Google e muitas outras plataformas de mensagens famosas, como o Slack, o Facebook Messenger e o Twitter. Além disso, o Dialogflow facilita a exportação ou importação de agentes de/para outras plataformas de processamento de linguagem natural, como o Amazon Alexa e o Microsoft Cortana.
 
 ### Tabela de preços
 
-O Dialog Flow possui um plano gratuito porém com funções limitadas e outro pago para empresas. Os preços e características de cada plano são apresentados na figura \ref{fig:dialog-precos}.
+O Dialog Flow possui um plano gratuito porém com funções limitadas e outro pago para empresas. Os preços e características de cada plano são apresentados na figura abaixo:
 
-\begin{figure}[H]
-\caption{Planos da plataforma Dialog Flow}
+![Planos da plataforma Dialog Flow](https://github.com/quixote15/ludiico_researchs/blob/master/TCC-TIAGO/Imagens/dialog-precos.png)
 
-\centering
-\includegraphics[scale=0.5]{Imagens/dialog-precos.png}
+A partir da exploração dos 4 aplicativos 7 características foram extraídas. As principais características encontradas nas frameworks estão discriminadas no Quadro abaixo, assim como suas respectivas identiﬁcações.
 
-\label{fig:dialog-precos}
+| Identificação | Características                                  |
+| ------------- | ------------------------------------------------ |
+| C1            | Open source                                      |
+| C2            | Integração com mensageiros externos              |
+| C3            | Processa linguagem natural                       |
+| C4            | Usa aprendizado de maquina para inferir contexto |
+| C5            | Processa áudio                                   |
+| C6            | Fornece interface gráfica                        |
+| C7            | Realiza análise estatística                      |
 
-Fonte: https://cloud.google.com/dialogflow/pricing
-\end{figure}
-
-\subsection{Extração de características}
-
-A partir da exploração dos 4 aplicativos 7 características foram extraídas. As principais características encontradas nas frameworks estão discriminadas no Quadro \ref{tabela:caracteristicas}, assim como suas respectivas identiﬁcações.
-
-\begin{table}[H]
-
-\begin{center}
-\begin{tabular}{| p{5cm}| p{5cm}|}
-\hline
-Identificação & Características\\
-\hline
-C1 & Open source\\
-\hline
-C2 & Integração com mensageiros externos \\
-\hline
-C3 & Processa linguagem natural\\
-\hline
-C4 & Usa aprendizado de maquina para inferir contexto \\
-\hline
-C5 & Processa áudio \\
-\hline
-C6 & Fornece interface gráfica \\
-\hline
-C7 & Realiza análise estatística \\
-\hline
-
-    \end{tabular}
-    \caption{ Principais características identificadas nas frameworks}
-    \label{tabela:caracteristicas}
-    \end{center}
-
-\end{table}
-
-A partir do levantamento destas características foi construído um quadro associando estas a cada uma das frameworks. O Quadro \ref{tabela:comparativo} exibe quais característica são apresentadas por cada framework, respondendo assim, a segunda e terceira questão de pesquisa.
+A partir do levantamento destas características foi construído um quadro associando estas a cada uma das frameworks. O Quadro abaixo exibe quais característica são apresentadas por cada framework, respondendo assim, a segunda e terceira questão de pesquisa.
 
 Quais frameworks realizam processamento de linguagem natural ?
 
 Quais são as características destas frameworks?
 
-\begin{table}[H]
+| p{2cm}| p{1cm}| p{1cm} | p{1cm}| p{1cm}| p{1cm}| p{1cm}| p{1cm}|
+| --- | --- | --- | --- | --- | --- | --- |
+| C1  | C2  | C3  | C4  | C5  | C6  | C7 |
+| Dialog Flow | | | X | X | X | |  |
+| Watson Assistant | | | X | X | | |  |
+| Rasa | X | | X | X | | |  |
+| Wit.ai | X | | X | X | X | |  |
+| Botpress | X | X | X | | | X | X |
+| Botkit | X | X | | | X | X | X |
 
-\begin{center}
-\begin{tabular}{| p{2cm}| p{1cm}| p{1cm} | p{1cm}| p{1cm}| p{1cm}| p{1cm}| p{1cm}|}
-\hline
-& C1 & C2 & C3 & C4 & C5 & C6 & C7\\
-\hline
-Dialog Flow & & & X & X & X & & \\
-\hline
-Watson Assistant & & & X & X & & & \\
 
-\hline
-Rasa & X & & X & X & & & \\
-
-\hline
-Wit.ai & X & & X & X & X & & \\
-
-\hline
-Botpress & X & X & X & & & X & X\\
-
-\hline
-Botkit & X & X & & & X & X & X\\
-
-\hline
-
-    \end{tabular}
-    \caption{ Principais características identificadas nas frameworks}
-    \label{tabela:comparativo}
-    \end{center}
-
-\end{table}
 
 ## Escolha das Frameworks
 
-Decidir qual framework será mais adequada para um projeto de software não é tarefa trivial. Em seu famoso artigo \textit{“No Silver Bullet — Essence and Accident in Software Engineering"} (Não há bala de prata — Essência e Acidente na Engenharia de Software em português), Frederick P. Brooks afirmou, em 1986, que não existe nenhuma metodologia de desenvolvimento ou técnicas de gestão que consiga aumentar significativamente a produtividade e confiabilidade da engenharia de software. Assim, de forma analoga, não existe a framework perfeita e, portanto, a escolha da mesma deve levar em conta os requisitos e restrições do projeto em questão.
+Decidir qual framework será mais adequada para um projeto de software não é tarefa trivial. Em seu famoso artigo “No Silver Bullet — Essence and Accident in Software Engineering" (Não há bala de prata — Essência e Acidente na Engenharia de Software em português), Frederick P. Brooks afirmou, em 1986, que não existe nenhuma metodologia de desenvolvimento ou técnicas de gestão que consiga aumentar significativamente a produtividade e confiabilidade da engenharia de software. Assim, de forma analoga, não existe a framework perfeita e, portanto, a escolha da mesma deve levar em conta os requisitos e restrições do projeto em questão.
 
 Sendo assim, os requisitos gerais e suficientemente amplos de forma que sirvam de referência para este trabalho e projetos futuros. Esse requisitos gerais também podem ser entendidos como recursos ou habilidades que um chatbot necessita e que a framework escolhida deve prover. Também é possivel que se utilize mais de uma framework para atender os requisitos do projeto.
 
-\begin{itemize}
-\item \textbf{NLP: } O chatbot deve ter um módulo de processamento de linguagem natural
-\item\textbf{ IA:} O chatbot deve possuir algoritmos de aprendizado de máquina para que possa entender contextos de conversação e ampliar sua base de conhecimento.
-\item \textbf{Canais: } O chatbot deve estar presente em mais de um canal de comunicação
-\item\textbf{ Hospedagem:} O chatbot não deve depender de um serviço de hospedagem específico podendo ser hospedado em qualquer infraestrutura disponível e de acordo com as restrições orçamentárias do projeto.
 
-\end{itemize}
+- **NLP:**  O chatbot deve ter um módulo de processamento de linguagem natural
+- **IA:** O chatbot deve possuir algoritmos de aprendizado de máquina para que possa entender contextos de conversação e ampliar sua base de conhecimento.
+- **Canais:**  O chatbot deve estar presente em mais de um canal de comunicação
+- **Hospedagem:** O chatbot não deve depender de um serviço de hospedagem específico podendo ser hospedado em qualquer infraestrutura disponível e de acordo com as restrições orçamentárias do projeto.
+
 
 Vale ressaltar que um outro critério importante a se considerar na escolha da framework é o tamanho da comunidade que a mantém atualizada e realiza correções frequentes. Nesse ponto, todas as frameworks selecionadas na fase de levantamento possuem comunidade ativa.
 
-A partir dos critérios selecionados as frameworks Botkit e Rasa foram selecionadas. O diagrama da figura \ref{fig:frame-decisao} ilustra o processo de tomada de decisão.
+A partir dos critérios selecionados as frameworks Botkit e Rasa foram selecionadas. O diagrama da figura abaixo ilustra o processo de tomada de decisão.
 
-\begin{figure}[H]
-\caption{Diagrama ilustrativo do processo de escolha das frameworks de desenvolvimento.}
 
-\centering
-\includegraphics[scale=0.37]{Imagens/decisao_frame.png}
-\label{fig:frame-decisao}
-Fonte: O autor.
-\end{figure}
+
+![Diagrama ilustrativo do processo de escolha das frameworks de desenvolvimento.](https://github.com/quixote15/ludiico_researchs/blob/master/TCC-TIAGO/Imagens/decisao_frame.png)
 
 As frameworks Botkit e Rasa com o objetivo de abranger todas as 7 características definidas. Essas frameworks permitem que as soluções desenvolvidas sejam escaláveis, uma vez que fornece total domínio dos dados e do código interno, são independentes de infraestrutura e permitem integração em múltiplos canais.
 
 As frameworks Dialog Flow, IBM Watson Assistant e Wit.ai são altamente dependentes de serviços hospedados em servidores proprietários. Portanto, possuem limitações em termos custos, domínio dos dados de aplicações e escalabilidade.
+
